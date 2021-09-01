@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(243, 239, 239);
+}
+header{
+    background-color: rgb(142, 175, 245);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(104, 99, 99);
+    width: 1000px;
+    margin: auto;
+
+}
+section{
+    background-color: rgb(142, 175, 245);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(104, 99, 99);
+    width: 1000px;
+    margin: auto;
+    line-height: 35px;
+}
+input{
+    background-color: rgb(230, 230, 230);
+    color: rgb(8, 8, 8);
+    box-shadow: 5px 4px 5px rgb(109, 108, 108);
+    border-radius: 10px;
+    border-style: double ;
+}
