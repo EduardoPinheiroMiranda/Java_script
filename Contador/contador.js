@@ -17,11 +17,8 @@ var limit = ffim - ini
     }
         for(var i=ini; i<=ffim;i+=pas){
             res.innerHTML += `  \u{1f449}${i}`
-            if(i==ffim||i>ffim){
-                res.innerHTML += `\u{1F3C1}`
-            }
-            
         }
+        res.innerHTML += `\u{1F3C1}`
 }
 
 
