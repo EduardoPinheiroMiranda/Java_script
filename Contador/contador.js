@@ -1,23 +1,28 @@
-var inicio = document.getElementById('inicio')
-var fim = document.getElementById('fim')
-var res = document.getElementById('res')
-var ffim = Number(fim)
-var iinicio = Number(inicio)
-var num = new Array(ffim)
-
-    
+var inicio = document.getElementById("inicio")
+var fim = document.getElementById("fim")
+var passos = document.getElementById("passos")
+var res = document.getElementById("res")
 
 
+function confirmar(){
+var ini = Number(inicio.value)
+var ffim = Number(fim.value)
+var pas = Number(passos.value)
+var limit = ffim - ini
 
-
-
-
-
-
-function conf(){
-    for(var i=iinicio ;i<ffim;i++){
-        num[i]=i+1
-        res.innerHTML = `${num[i]}, ` 
+    if(passos.value.length ==0){
+        window.alert("[ERRO] Valores invalidos")
+    }else if(pas>limit){
+        window.alert("[ERRO] Número de passos invalidos")
     }
+        for(var i=ini; i<=ffim;i+=pas){
+            res.innerHTML += `  \u{1f449}${i}`
+            if(i==ffim||i>ffim){
+                res.innerHTML += `\u{1F3C1}`
+            }
+            
+        }
 }
+
+
 
