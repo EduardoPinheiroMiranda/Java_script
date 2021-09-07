@@ -9,24 +9,24 @@ h1{
 }
 div#jog3{
     
-    background-color: rgba(40, 150, 253, 0.493);
+    /*background-color: rgba(40, 150, 253, 0.493);*/
     padding: 15px;
     width: 300px;
-    border-radius: 15px;
-    box-shadow: 1px 5px 10px;
+    /*border-radius: 15px;
+    box-shadow: 1px 5px 10px;*/
 }
 div#jog1{
     background-color: rgb(247, 39, 39);
     padding: 10px;
     width: 250px;
-    border-radius: 15px;
+    border-radius: 0px;
     box-shadow: -1px 1px 10px;
 }
 div#jog2{
     background-color: royalblue;
     padding: 10px;
     width: 250px;
-    border-radius: 15px;
+    border-radius: 0px;
     box-shadow: -1px 1px 10px;
 }
 div#start{
@@ -35,7 +35,7 @@ div#start{
 }
 input#conf{
     width: 100px;
-    border-radius: 10px;
+    border-radius: 0px;
     padding: 5px;
     background-color: rgb(177, 207, 219);
 }
@@ -56,16 +56,16 @@ div#velha{
 }
 div#seção_velha{
     text-align: center;
-    margin-top: 30px;
+    margin-top: -232px;
     padding: 10px;
 
 }
-input#prim{ height: 70px; width: 100px;}
-input#segu{ height: 70px; width: 100px;}
-input#terc{ height: 70px; width: 100px;}
-input#quar{ height: 70px; width: 100px;}
-input#quin{ height: 70px; width: 100px;}
-input#sest{ height: 70px; width: 100px;}
-input#sete{ height: 70px; width: 100px;}
-input#oito{ height: 70px; width: 100px;}
-input#nono{ height: 70px; width: 100px;}
+input#prim{ height: 70px; width: 100px; border-radius: 10px;}
+input#segu{ height: 70px; width: 100px; border-radius: 10px;}
+input#terc{ height: 70px; width: 100px; border-radius: 10px;}
+input#quar{ height: 70px; width: 100px; border-radius: 10px;}
+input#quin{ height: 70px; width: 100px; border-radius: 10px;}
+input#sest{ height: 70px; width: 100px; border-radius: 10px;}
+input#sete{ height: 70px; width: 100px; border-radius: 10px;}
+input#oito{ height: 70px; width: 100px; border-radius: 10px;}
+input#nono{ height: 70px; width: 100px; border-radius: 10px;}
