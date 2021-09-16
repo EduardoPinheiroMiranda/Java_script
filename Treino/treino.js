@@ -3,6 +3,28 @@ var exibir=document.getElementById("sel")
 var analize= document.getElementById("analise")
 var banco=[]
 
+function tem_numero(n){
+    if(Number(n)>=0 && Number(n)<=100){
+        return true
+    }else{
+        return false
+    }
+}
+function tem_lista(n,l){
+    if(l.indexOf(Number(n)) != -1){
+        return true
+    }else{
+        return false
+    }
+}
+function confirmar(){
+    if(tem_numero(valor.value) && !tem_lista(valor.value, banco)){
+        alert("ok")
+    }else{
+        alert("errado")
+    }
+}
+/*
 function confirmar(){
     if(valor.value.length==0){
         alert("[ERRO] Você não digitou nenhum valor!")
@@ -52,4 +74,4 @@ function fim(){
             analize.innerHTML+=`O menor número é ${aux}<p>`
             
     }
-}
+}*/
