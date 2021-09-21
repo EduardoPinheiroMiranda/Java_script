@@ -4,14 +4,14 @@ var analize= document.getElementById("analise")
 var banco=[]
 
 function tem_numero(n){
-    if(Number(n)==0){
+    if(n.length==0){
         return true
     }else{
         return false
     }
 }
-function tem_lista(n,l){
-    if(l.indexOf(Number(n)) != -1){
+function  tem_lista(n, l){
+    if(l.indexOf(n) != -1){
         return true
     }else{
         return false
