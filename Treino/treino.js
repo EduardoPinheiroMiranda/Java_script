@@ -3,6 +3,7 @@ var exibir=document.getElementById("sel")
 var analize= document.getElementById("analise")
 var banco=[]
 
+
 function tem_numero(n){
     if(n.length==0){
         return true
@@ -28,21 +29,8 @@ function confirmar(){
             var item = document.createElement('option')
             item.text=valor.value
             exibir.appendChild(item)
-            analize.innerHTML=banco
-                //maior, menor
-                var maior=0, cont, menor=9999999
-                for(var i=0;i<banco.length;i++){
-                    if(banco[i]>maior){
-                       cont= maior 
-                       maior=banco[i]
-                       banco[i]=cont
-                    }
-                    if(banco[i]<menor){
-                        cont= menor 
-                        menor=banco[i]
-                        banco[i]=cont
-                     }
-                }
+                
+            
         }
 }
 
@@ -50,6 +38,20 @@ function fim(){
     if(banco.length==0){
         alert("[ERRO] Verifique se os valores foram digitados!")
     }else{
-
+        var maior=valor.value, cont, menor=9999999, media=0
+            for(var i=0;i<banco.length;i++){
+                if(banco[i]>maior){
+                    maior=banco[i]
+                }
+                if(banco[i]<menor){
+                    menor=banco[i]
+                }
+                media = media+Number(banco[i])
+            }
+            media=media/banco.length
+        analize.innerHTML=`O maior número é ${maior}.<p>`
+        analize.innerHTML+=`O menor número é ${menor}.<p>`
+        analize.innerHTML+=`A tabela possui ${banco.length} números.<p>`
+        analize.innerHTML+=` A media dos valores na tabele é ${media}`
     }
 }
