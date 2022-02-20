@@ -27,7 +27,7 @@ function start() {
 
 let TabelaDeCores = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
 let QuemJoga = 01
-
+let cont = 0
 function vencedor(){
 //------------------------Horizontal
   if(TabelaDeCores[0]=="blue"&&TabelaDeCores[1]=="blue"&&TabelaDeCores[2]=="blue"){
