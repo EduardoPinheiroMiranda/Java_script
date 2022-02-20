@@ -29,9 +29,15 @@ let TabelaDeCores = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
 let QuemJoga = 01
 
 function vencedor(){
-  if(TabelaDeCores[0]=="blue"&&TabelaDeCores[1]=="blue"&&TabelaDeCores[2]=="blue"){tabuleiro.setAttribute("style", "backgrounde-color:blue")} 
-  if(TabelaDeCores[3]=="blue"&&TabelaDeCores[4]=="blue"&&TabelaDeCores[5]=="blue"){tabuleiro.setAttribute("style","background-color:blue")}
-  if(TabelaDeCores[6]=="blue"&&TabelaDeCores[7]=="blue"&&TabelaDeCores[8]=="blue"){tabuleiro.setAttribute("style","background-color:blue")}
+  if(TabelaDeCores[0]=="blue"&&TabelaDeCores[1]=="blue"&&TabelaDeCores[2]=="blue"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent")}
+  }
+  if(TabelaDeCores[3]=="blue"&&TabelaDeCores[4]=="blue"&&TabelaDeCores[5]=="blue"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent")}
+  }
+  if(TabelaDeCores[6]=="blue"&&TabelaDeCores[7]=="blue"&&TabelaDeCores[8]=="blue"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent")}
+  }
 }
 
 function pos1(){
