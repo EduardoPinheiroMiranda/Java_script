@@ -29,14 +29,58 @@ let TabelaDeCores = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
 let QuemJoga = 01
 
 function vencedor(){
+//------------------------Horizontal
   if(TabelaDeCores[0]=="blue"&&TabelaDeCores[1]=="blue"&&TabelaDeCores[2]=="blue"){
-    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent")}
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador1} você foi o ganhador`}
   }
   if(TabelaDeCores[3]=="blue"&&TabelaDeCores[4]=="blue"&&TabelaDeCores[5]=="blue"){
-    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent")}
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador1} você foi o ganhador`}
   }
   if(TabelaDeCores[6]=="blue"&&TabelaDeCores[7]=="blue"&&TabelaDeCores[8]=="blue"){
-    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent")}
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador1} você foi o ganhador`}
+  }
+
+  if(TabelaDeCores[0]=="red"&&TabelaDeCores[1]=="red"&&TabelaDeCores[2]=="red"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador2} você foi o ganhador`}
+  }
+  if(TabelaDeCores[3]=="red"&&TabelaDeCores[4]=="red"&&TabelaDeCores[5]=="red"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador2} você foi o ganhador`}
+  }
+  if(TabelaDeCores[6]=="red"&&TabelaDeCores[7]=="red"&&TabelaDeCores[8]=="red"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador2} você foi o ganhador`}
+  }
+//------------------------vertical
+  if(TabelaDeCores[0]=="blue"&&TabelaDeCores[3]=="blue"&&TabelaDeCores[6]=="blue"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador1} você foi o ganhador`}
+  }
+  if(TabelaDeCores[1]=="blue"&&TabelaDeCores[4]=="blue"&&TabelaDeCores[7]=="blue"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador1} você foi o ganhador`}
+  }
+  if(TabelaDeCores[2]=="blue"&&TabelaDeCores[5]=="blue"&&TabelaDeCores[8]=="blue"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador1} você foi o ganhador`}
+  }
+
+  if(TabelaDeCores[0]=="red"&&TabelaDeCores[3]=="red"&&TabelaDeCores[6]=="red"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador2} você foi o ganhador`}
+  }
+  if(TabelaDeCores[1]=="red"&&TabelaDeCores[4]=="red"&&TabelaDeCores[7]=="red"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador2} você foi o ganhador`}
+  }
+  if(TabelaDeCores[2]=="red"&&TabelaDeCores[5]=="red"&&TabelaDeCores[8]=="red"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador2} você foi o ganhador`}
+  }
+//----------------------Diagonal
+  if(TabelaDeCores[0]=="red"&&TabelaDeCores[4]=="red"&&TabelaDeCores[8]=="red"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador2} você foi o ganhador`}
+  }
+  if(TabelaDeCores[2]=="red"&&TabelaDeCores[4]=="red"&&TabelaDeCores[6]=="red"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");;tabuleiro.innerHTML=`Parambés ${jogador2} você foi o ganhador`}
+  }
+  if(TabelaDeCores[0]=="blue"&&TabelaDeCores[4]=="blue"&&TabelaDeCores[8]=="blue"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador1} você foi o ganhador`}
+  }
+  if(TabelaDeCores[2]=="blue"&&TabelaDeCores[4]=="blue"&&TabelaDeCores[6]=="blue"){
+    for(let i=0;i<9;i++){cor[i].setAttribute("style","background-color:transparent");tabuleiro.innerHTML=`Parambés ${jogador1} você foi o ganhador`}
   }
 }
 
