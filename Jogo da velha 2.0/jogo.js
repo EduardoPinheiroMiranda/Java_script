@@ -28,6 +28,12 @@ function start() {
 let TabelaDeCores = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
 let QuemJoga = 01
 
+function vencedor(){
+  if(TabelaDeCores[0]=="blue"&&TabelaDeCores[1]=="blue"&&TabelaDeCores[2]=="blue"){tabuleiro.setAttribute("style", "backgrounde-color:blue")} 
+  if(TabelaDeCores[3]=="blue"&&TabelaDeCores[4]=="blue"&&TabelaDeCores[5]=="blue"){tabuleiro.setAttribute("style","background-color:blue")}
+  if(TabelaDeCores[6]=="blue"&&TabelaDeCores[7]=="blue"&&TabelaDeCores[8]=="blue"){tabuleiro.setAttribute("style","background-color:blue")}
+}
+
 function pos1(){
   if(QuemJoga%2!=0){
     if(TabelaDeCores[0]==' '){
@@ -35,6 +41,7 @@ function pos1(){
       cor[0].setAttribute("style", "background-color:blue")
       TabelaDeCores[0]="blue"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML= `<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -44,6 +51,7 @@ function pos1(){
       cor[0].setAttribute("style", "background-color:red")
       TabelaDeCores[0]="red"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -57,6 +65,7 @@ function pos2(){
       cor[1].setAttribute("style", "background-color:blue")
       TabelaDeCores[1]="blue"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -66,6 +75,7 @@ function pos2(){
       cor[1].setAttribute("style", "background-color:red")
       TabelaDeCores[1]="red"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -79,6 +89,7 @@ function pos3(){
       cor[2].setAttribute("style", "background-color:blue")
       TabelaDeCores[2]="blue"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -88,6 +99,7 @@ function pos3(){
       cor[2].setAttribute("style", "background-color:red")
       TabelaDeCores[2]="red"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -101,6 +113,7 @@ function pos4(){
       cor[3].setAttribute("style", "background-color:blue")
       TabelaDeCores[3]="blue"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -110,6 +123,7 @@ function pos4(){
       cor[3].setAttribute("style", "background-color:red")
       TabelaDeCores[3]="red"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -123,6 +137,7 @@ function pos5(){
       cor[4].setAttribute("style", "background-color:blue")
       TabelaDeCores[4]="blue"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML= `<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -132,6 +147,7 @@ function pos5(){
       cor[4].setAttribute("style", "background-color:red")
       TabelaDeCores[4]="red"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -145,6 +161,7 @@ function pos6(){
       cor[5].setAttribute("style", "background-color:blue")
       TabelaDeCores[5]="blue"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML= `<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -154,6 +171,7 @@ function pos6(){
       cor[5].setAttribute("style", "background-color:red")
       TabelaDeCores[5]="red"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -167,6 +185,7 @@ function pos7(){
       cor[6].setAttribute("style", "background-color:blue")
       TabelaDeCores[6]="blue"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML= `<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -176,6 +195,7 @@ function pos7(){
       cor[6].setAttribute("style", "background-color:red")
       TabelaDeCores[6]="red"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -189,6 +209,7 @@ function pos8(){
       cor[7].setAttribute("style", "background-color:blue")
       TabelaDeCores[7]="blue"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML= `<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -198,6 +219,7 @@ function pos8(){
       cor[7].setAttribute("style", "background-color:red")
       TabelaDeCores[7]="red"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -211,6 +233,7 @@ function pos9(){
       cor[8].setAttribute("style", "background-color:blue")
       TabelaDeCores[8]="blue"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML= `<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
@@ -220,8 +243,10 @@ function pos9(){
       cor[8].setAttribute("style", "background-color:red")
       TabelaDeCores[8]="red"
       QuemJoga +=1
+      vencedor()
     }else{
       JogadaErrada.innerHTML=`<strong>Você não pode marcar aqui, tente outro lugar!</strong>`
     }
   }
 }
+
