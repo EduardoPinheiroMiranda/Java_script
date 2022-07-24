@@ -1,0 +1,43 @@
+#corpo_cal{
+    background-color: gray;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    height: 500px
+  }
+
+  #corpo_center{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #visor{
+    background-color: white;
+    padding: 20px;   
+    border-radius: 10px
+  }
+
+  .col1{
+    width: 100px;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px
+    
+  }
+
+  .col2{
+    width: 100px;
+    margin-left: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px
+  }
+
+  .lin2{
+    width: 220px;
+    padding: 20px;
+    border-radius: 50px;
+  }
+
